@@ -20,13 +20,17 @@
 
         private void numerosPares_Clicked(object sender, EventArgs e)
         {
+
                         Navigation.PushAsync(new numerosParess());
+
 
         }
 
         private void sueldoSemanal_Clicked(object sender, EventArgs e)
         {
+
                        Navigation.PushAsync(new sueldoSemanall());
+
 
         }
 
