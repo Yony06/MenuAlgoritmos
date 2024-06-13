@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuAlgoritmos.numerosParess"
+              BackgroundImageSource="numeros.jpg">
+    
+    <ScrollView>
+        <VerticalStackLayout
+           Spacing="25"
+           Padding="30,0"
+           VerticalOptions="Center">
+
+            <!--Creamos sun label para el titulo-->
+            <Label
+               Text="Numeros Pares 0-100"
+               FontSize="32"
+               FontFamily="Cambria"
+               HorizontalOptions="Center"
+               BackgroundColor="Black"
+               TextColor="Gainsboro"/>
+
+            <!--Creamos un label donde se mostraran los numeros pares generados al dar click al boton-->
+            <Label
+               x:Name="Mostrar"
+               Padding="20"
+               FontSize="18"
+               FontFamily="Comic Sans"
+               HorizontalOptions="Center"
+               BackgroundColor="Black"/>
+
+            <!--Declaramos un boton que hara referncia al codigo para que aparezcan los numeros-->
+            <Button
+               x:Name="Numeros"
+               Text="Generar Numeros"
+               SemanticProperties.Hint="Counts the number of times you click"
+               Clicked="OnCounterClicked"
+               HorizontalOptions="Center"
+               BackgroundColor="DarkGray"
+               BorderColor="DarkBlue"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

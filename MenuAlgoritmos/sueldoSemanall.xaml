@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuAlgoritmos.sueldoSemanall"
+             BackgroundImageSource="dinero.jpg">
+
+    <ScrollView>
+        <VerticalStackLayout
+         Spacing="25"
+         Padding="30,0"
+         VerticalOptions="Center">
+
+            <!--Agregamos 4 label, uno para el titulo del programa y los otros 2 para pedir los datos y el de mostrar el resultado-->
+            <Label
+             Text="Sueldo del trabajador"
+             FontSize="32"
+             FontFamily="Cambria"
+             HorizontalOptions="Center"
+             Padding="5"/>
+
+            <!--Pedir datos-->
+            <Label
+             Text="Digite el numero de horas trabajadas:"
+             FontFamily="Cambria"
+             FontSize="16"
+             HorizontalOptions="Center" 
+             BackgroundColor="Black"
+             Padding="10"/>
+
+            <!--Colocamos el entry donde ingresaremos las horas trabajadas-->
+            <Entry 
+             x:Name="Horas"
+             Placeholder="Ingrese las horas trabajadas"
+             WidthRequest="400" 
+             BackgroundColor="Black"/>
+
+            <!--Pedir datos-->
+            <Label
+             Text="Digite el pago por horas trabajadas:"
+             FontFamily="Cambria"
+             FontSize="16"
+             HorizontalOptions="Center" 
+             BackgroundColor="Black"
+             Padding="10"/>
+
+            <!--Colocamos el entry donde ingresaremos el pago por las horas trabajadas-->
+            <Entry 
+             x:Name="Pago"
+             Placeholder="Ingrese el pago por las horas trabajadas"
+             WidthRequest="400"
+             BackgroundColor="Black"/>
+
+            <!--Colocamos un boton que al dar click va a generar la operacion y calcular el sueldo-->
+            <Button
+             x:Name="CounterBtn"
+             Text="Calcular Sueldo"
+             Clicked="OnCounterClicked"
+             HorizontalOptions="Center" 
+             Padding="20"/>
+
+            <!--Mostrar datos-->
+            <Label
+             Text="Su sueldo semanal es de:"
+             FontFamily="Cambria"
+             FontSize="16"
+             HorizontalOptions="Center" 
+             Padding="10"
+             BackgroundColor="Black"/>
+
+            <!--Colocamos el entry donde mostrara el sueldo del trabajador-->
+            <Entry 
+             x:Name="Sueldo"
+             Placeholder="Su sueldo es"
+             WidthRequest="400" 
+             BackgroundColor="Black"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

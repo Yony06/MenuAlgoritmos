@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuAlgoritmos.MainPage"
+             BackgroundImageSource="menu.jpg">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25">
+
+            <Label Text="6 Algoritmos de .Net Maui" FontSize="30" HorizontalOptions="Center" FontFamily="Berlin Sans FB" TextColor="White"/>
+
+            <Button x:Name="numerosPares" Text="Numeros Pares Del 0 Al 100" Clicked="numerosPares_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+            <Button x:Name="cuentaRegresiva" Text="Cuenta Regresiva" Clicked="cuentaRegresiva_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+            <Button x:Name="tablasMultiplicar" Text="Tablas De Multiplicar" Clicked="tablasMultiplicar_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+            <Button x:Name="sueldoSemanal" Text="Sueldo Semanal Del Trabajador" Clicked="sueldoSemanal_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+            <Button x:Name="langostaAhumada" Text="La Langosta Ahumada" Clicked="langostaAhumada_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+            <Button x:Name="empresaImportadora" Text="Empresa Importadora" Clicked="empresaImportadora_Clicked" WidthRequest="400" HeightRequest="0" FontFamily="Berlin Sans FB"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
